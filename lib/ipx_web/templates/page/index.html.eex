@@ -1,0 +1,210 @@
+<!-- Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="container">
+  <div class="row" style="margin-top: 3%">
+    <div class="one columns">&nbsp;</div>
+    <div class="two columns"><h5>ipx</h5></div>
+    <div class="eight columns" align="right">
+      <a href="#" style="margin-left: 10px">Docs</a>
+      <a href="#" style="margin-left: 10px">Sign Up</a>
+      <a class="button button-primary" href="#" style="margin-left: 15px">Sign In</a>
+    </div>
+    <div class="one columns">&nbsp;</div>
+  </div>
+
+  <!-- Header
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="row" style="margin-top: 13%;">
+    <center><h1>Pinpoint Any IP Address</h1></center>
+    <center><h6>Get the geolocation, network, timezone and more with a single API call.</h6></center>
+  </div>
+
+  <!-- Header Code Example
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="row" style="margin-top: 7%">
+    <div class="two columns">&nbsp;</div>
+    <div class="eight columns">
+      <pre><code>
+        $ curl https://ipx.herokuapp.com/98.26.4.61
+
+        {
+          "time_zone": "America/New_York",
+          "region_name": "North Carolina",
+          "region_code": "NC",
+          "postal": "27704",
+          "asn": 11426,
+          "network": "Time Warner Cable Internet LLC",
+          "longitude": -78.8391,
+          "latitude": 36.0355,
+          "ip": "98.26.4.61",
+          "country_name": "United States",
+          "country_code": "US",
+          "continent": "North America",
+          "city": "Durham"
+        }
+      </code></pre>
+    </div>
+    <div class="two columns">&nbsp;</div>
+  </div>
+
+  <!-- Line break
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="row" style="margin-top: 10%">
+    <div class="one column">&nbsp;</div>
+    <div class="ten columns"><hr></div>
+    <div class="one column">&nbsp;</div>
+  </div>
+
+  <!-- Features First Row
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="row" style="margin-top: 10%">
+    <center><h5>Features</h5></center>
+  </div>
+
+  <div class="row">
+    <div class="one columns">&nbsp;</div>
+
+    <div class="five columns" style="margin-top: 10%">
+      <h4>
+        <img alt="" src="<%= static_path(@conn, "/images/signpost.svg") %>" style="width: 40px; margin-right: 15px"/>
+        Blazing Fast
+      </h4>
+      To get you your results as fast as possible we load up the entire IP
+      database in memory. There's no secondary data store to run a query
+      against so no bottle necks from outside services. Just your request
+      running in our application process.
+    </div>
+
+    <div class="five columns" style="margin-top: 10%">
+      <h4>
+        <img alt="" src="<%= static_path(@conn, "/images/geolocation-1.svg") %>" style="width: 40px; margin-right: 15px"/>
+        Multilingual Support
+      </h4>
+      Get results in Spanish, French, Japanese, Russian, and German. If
+      a particular piece of location data isn't available in a language
+      we always fall back on English.
+    </div>
+    <div class="one columns">&nbsp;</div>
+  </div>
+
+  <!-- Features Second Row
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="row">
+    <div class="one columns">&nbsp;</div>
+    <div class="five columns" style="margin-top: 10%">
+      <h4>
+        <img alt="" src="<%= static_path(@conn, "/images/pin.svg") %>" style="width: 40px; margin-right: 15px"/>
+        Fully Managed
+      </h4>
+      Focus on your application and it's core business logic. Stop worrying
+      about managing another application within your infrastructure for IP
+      address data. We're keeping tabs of performance and uptime so you don't
+      have to.
+    </div>
+
+    <div class="five columns" style="margin-top: 10%">
+      <h4>
+        <img alt="" src="<%= static_path(@conn, "/images/position-2.svg") %>" style="width: 40px; margin-right: 15px"/>
+        Support that Cares
+      </h4>
+      If you have any issues at all, we'll respond to your email within 24
+      hours. Even on weekends. We want to make sure you feel secure knowing
+      our service is up so you can focus on your business.
+    </div>
+    <div class="one columns">&nbsp;</div>
+  </div>
+
+  <!-- Line break
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="row" style="margin-top: 10%">
+    <div class="one column">&nbsp;</div>
+    <div class="ten columns"><hr></div>
+    <div class="one column">&nbsp;</div>
+  </div>
+
+  <!-- Pricing
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="row" style="margin-top: 10%">
+    <center><h5>Pricing</h5></center>
+  </div>
+
+  <div class="row" style="margin-top: 10%">
+    <center><h2>$99/month</h2></center>
+  </div>
+
+  <div class="row" style="margin-top: 10%">
+    <div class="three columns">&nbsp;</div>
+    <div class="six columns">
+      We're building a simple service and that means super simple pricing too.
+      We have one flat monthly fee for unlimited usage. No need to keep track
+      of how many requests you've made today, this month, or scaling down to
+      not overpay. For just one monthly fee you can have peace of mind and know
+      exactly how much you owe even if your made 100x the requests last month.
+    </div>
+    <div class="two columns">&nbsp;</div>
+  </div>
+
+  <!-- Line break
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="row" style="margin-top: 10%">
+    <div class="one column">&nbsp;</div>
+    <div class="ten columns"><hr></div>
+    <div class="one column">&nbsp;</div>
+  </div>
+
+  <!-- Get Started
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="row" style="margin-top: 10%">
+    <center>
+      <h5>Get Started</h5>
+      Ready to start getting IP address information? Get started in about 1 minute.
+    </center>
+  </div>
+
+  <div class="row" style="margin-top: 10%">
+    <center>
+      <div class="twelve columns">
+        <a class="button" href="#">See the Docs</a>
+        <a class="button button-primary" href="#">Sign Up</a>
+      </div>
+    </center>
+  </div>
+
+  <!-- Line break
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="row" style="margin-top: 20%">
+    <div class="one column">&nbsp;</div>
+    <div class="ten columns"><hr></div>
+    <div class="one column">&nbsp;</div>
+  </div>
+
+  <!-- Footer
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="row">
+    <div class="one columns" style="margin-top: 10%">&nbsp;</div>
+    <div class="four columns" style="margin-top: 10%">
+      <b>About</b><br/><br/>
+      ipx is a service that solves one problem very well. We're here to provide
+      access to a wealth of IP Address information at a simple price so you can
+      get back to focusing on building that next great app.
+    </div>
+
+    <div class="two columns" style="margin-top: 10%">
+      <b>Resources</b><br/><br/>
+      <a href="#">Docs</a><br/>
+      <a href="#">Sign In</a><br/>
+      <a href="#">Support</a><br/>
+      <a href="#">Status</a><br/>
+    </div>
+
+    <div class="four columns" style="margin-top: 10%">
+      © 2018 ipx LLC. All rights reserved.<br/>
+    </div>
+    <div class="one columns" style="margin-top: 10%">&nbsp;</div>
+  </div>
+</div>
+
+<div class="row" style="margin-top: 15%"></div>
+
+<!-- End Document
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
